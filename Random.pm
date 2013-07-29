@@ -165,7 +165,7 @@ __END__
 
 =head1 NAME
 
-Image::Random - IBSmm::Generator for random images.
+Image::Random - Perl class for creating random image.
 
 =head1 SYNOPSIS
 
