@@ -268,7 +268,7 @@ Image::Random - Perl class for creating random image.
  unlink $temp;
 
  # Output:
- # jpeg
+ # bmp
 
 =head1 DEPENDENCIES
 

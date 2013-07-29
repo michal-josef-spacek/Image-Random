@@ -24,4 +24,4 @@ print $type."\n";
 unlink $temp;
 
 # Output:
-# jpeg
+# bmp
