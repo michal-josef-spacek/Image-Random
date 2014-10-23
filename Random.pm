@@ -67,7 +67,7 @@ sub create {
 		$background = Imager::Color->new(int rand 256, int rand 256,
 			int rand 256);
 	}
-	
+
 	# Create image.
 	$self->{'i'}->box(
 		'color' => $background,
@@ -130,7 +130,7 @@ sub type {
 # Check supported image type.
 sub _check_type {
 	my ($self, $type) = @_;
-	
+
 	# Check type.
 	if (none { $type eq $_ } ('bmp', 'gif', 'jpeg', 'png',
 		'pnm', 'raw', 'sgi', 'tga', 'tiff')) {
