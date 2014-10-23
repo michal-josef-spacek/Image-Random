@@ -15,6 +15,7 @@ MANIFEST			This list of files
 META.yml
 Random.pm
 README
+SIGNATURE
 t/Image-Random/00-use.t
 t/Image-Random/01-version.t
 t/Image-Random/02-pod_coverage.t
