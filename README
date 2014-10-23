@@ -61,6 +61,7 @@ ERRORS
      create():
              Cannot write file to '$path'.
                      Error, %s
+             Suffix '%s' doesn't supported.
 
 EXAMPLE
      # Pragmas.

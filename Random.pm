@@ -242,6 +242,7 @@ Image::Random - Perl class for creating random image.
  create():
          Cannot write file to '$path'.
                  Error, %s
+         Suffix '%s' doesn't supported.
 
 =head1 EXAMPLE
 
