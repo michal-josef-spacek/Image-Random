@@ -1,4 +1,4 @@
-0.02
+0.05
  - Add Image::Select to SEE ALSO section in doc.
  - Fix ERRORS section in doc.
  - Rewrite B<> to C<> in doc.
