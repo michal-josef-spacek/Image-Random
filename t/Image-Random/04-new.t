@@ -1,0 +1,66 @@
+# Pragmas.
+use strict;
+use warnings;
+
+# Modules.
+use English qw(-no_match_vars);
+use Error::Pure::Utils qw(clean);
+use Image::Random;
+use Imager::Color;
+use Test::More 'tests' => 8;
+use Test::NoWarnings;
+
+# Test.
+eval {
+	Image::Random->new('');
+};
+is($EVAL_ERROR, "Unknown parameter ''.\n", 'Bad \'\' parameter.');
+clean();
+
+# Test.
+eval {
+	Image::Random->new(
+		'something' => 'value',
+	);
+};
+is($EVAL_ERROR, "Unknown parameter 'something'.\n",
+	'Bad \'something\' parameter.');
+clean();
+
+# Test.
+my $obj = Image::Random->new;
+isa_ok($obj, 'Image::Random');
+
+# Test.
+$obj = Image::Random->new(
+	'type' => undef,
+);
+isa_ok($obj, 'Image::Random');
+
+# Test.
+eval {
+	Image::Random->new(
+		'color' => undef,
+		'color_random' => 0,
+	);
+};
+is($EVAL_ERROR, "Color isn't set.\n", "Color isn't set.");
+clean();
+
+# Test.
+eval {
+	Image::Random->new(
+		'color' => 'red',
+	);
+};
+is($EVAL_ERROR, "Bad background color definition. Use Imager::Color ".
+	"object.\n", "Bad background color definition. Use Imager::Color ".
+	"object.");
+clean();
+
+# Test.
+$obj = Image::Random->new(
+	'color' => Imager::Color->new('#C0C0FF'),
+	'color_random' => 0,
+);
+isa_ok($obj, 'Image::Random');
