@@ -17,6 +17,7 @@ requires 'File::Basename' => 0;
 requires 'Imager' => 0;
 requires 'Imager::Color' => 0;
 requires 'List::MoreUtils' => 0;
+requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Image-Random';
 resources 'homepage' => 'https://github.com/tupinek/Image-Random';
