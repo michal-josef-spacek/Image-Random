@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Perl class for creating random image.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Image-Random';
 requires 'Class::Utils' => 0.03;
