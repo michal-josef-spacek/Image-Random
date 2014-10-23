@@ -94,7 +94,7 @@ DEPENDENCIES
     List::MoreUtils.
 
 SEE ALSO
-    Data::Random.
+    Data::Random, Image::Select.
 
 REPOSITORY
     <https://github.com/tupinek/Image-Random>.

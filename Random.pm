@@ -282,7 +282,8 @@ L<List::MoreUtils>.
 
 =head1 SEE ALSO
 
-L<Data::Random>.
+L<Data::Random>,
+L<Image::Select>.
 
 =head1 REPOSITORY
 
