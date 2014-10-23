@@ -10,6 +10,7 @@ abstract 'Perl class for creating random image.';
 author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Image-Random';
+readme_from 'Random.pm';
 requires 'Class::Utils' => 0.03;
 requires 'Error::Pure' => 0.11;
 requires 'File::Basename' => 0;
