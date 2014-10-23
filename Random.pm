@@ -232,15 +232,16 @@ Image::Random - Perl class for creating random image.
 
 =head1 ERRORS
 
- Mine:
+ new():
          Bad background color definition. Use Imager::Color object.
-         Cannot write file to '$path'.
-                 Error, %s
          Color isn't set.
          Suffix '%s' doesn't supported.
+         From Class::Utils:
+                 Unknown parameter '%s'.
 
- Class::Utils:
-         Unknown parameter '%s'.
+ create():
+         Cannot write file to '$path'.
+                 Error, %s
 
 =head1 EXAMPLE
 
