@@ -7,7 +7,7 @@ use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
 use Image::Random;
 use Imager::Color;
-use Test::More 'tests' => 7;
+use Test::More 'tests' => 8;
 use Test::NoWarnings;
 
 # Test.
@@ -53,3 +53,13 @@ $obj = Image::Random->new(
 	'color' => Imager::Color->new('#C0C0FF'),
 );
 isa_ok($obj, 'Image::Random');
+
+# Test.
+eval {
+	Image::Random->new(
+		'type' => 'foo',
+	);
+};
+is($EVAL_ERROR, "Suffix 'foo' doesn't supported.\n",
+	"Suffix 'foo' doesn't supported.");
+clean();
