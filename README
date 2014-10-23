@@ -20,7 +20,7 @@ METHODS
             *       "color"
 
                      Color of image.
-                     Default value is 'bmp'.
+                     Default value is undef.
 
             *       "height"
 

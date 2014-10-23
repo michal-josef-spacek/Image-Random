@@ -193,7 +193,7 @@ Image::Random - Perl class for creating random image.
 =item * C<color>
 
  Color of image.
- Default value is 'bmp'.
+ Default value is undef.
 
 =item * C<height>
 
