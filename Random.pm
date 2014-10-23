@@ -23,7 +23,6 @@ sub new {
 	my $self = bless {}, $class;
 
 	# Background color.
-	$self->{'color_random'} = 1;
 	$self->{'color'} = undef;
 
 	# Image type.
@@ -46,9 +45,6 @@ sub new {
 		err 'Bad background color definition. Use Imager::Color '.
 			'object.';
 	}
-	if (! $self->{'color_random'} && ! defined $self->{'color'}) {
-		err 'Color isn\'t set.';
-	}
 
 	# Check type.
 	if (defined $self->{'type'}) {
@@ -65,11 +61,11 @@ sub create {
 
 	# Background color.
 	my $background;
-	if ($self->{'color_random'}) {
+	if ($self->{'color'}) {
+		$background = $self->{'color'};
+	} else {
 		$background = Imager::Color->new(int rand 256, int rand 256,
 			int rand 256);
-	} else {
-		$background = $self->{'color'};
 	}
 	
 	# Create image.
@@ -185,15 +181,11 @@ Image::Random - Perl class for creating random image.
 
 =over 8
 
-=item * C<color_random>
-
- Random color flag.
- Default value is 1.
-
 =item * C<color>
 
  Color of image.
  Default value is undef.
+ Undefined value means random color.
 
 =item * C<height>
 
@@ -234,7 +226,6 @@ Image::Random - Perl class for creating random image.
 
  new():
          Bad background color definition. Use Imager::Color object.
-         Color isn't set.
          Suffix '%s' doesn't supported.
          From Class::Utils:
                  Unknown parameter '%s'.

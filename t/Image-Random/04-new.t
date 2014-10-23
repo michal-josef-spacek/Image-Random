@@ -7,7 +7,7 @@ use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
 use Image::Random;
 use Imager::Color;
-use Test::More 'tests' => 8;
+use Test::More 'tests' => 7;
 use Test::NoWarnings;
 
 # Test.
@@ -40,16 +40,6 @@ isa_ok($obj, 'Image::Random');
 # Test.
 eval {
 	Image::Random->new(
-		'color' => undef,
-		'color_random' => 0,
-	);
-};
-is($EVAL_ERROR, "Color isn't set.\n", "Color isn't set.");
-clean();
-
-# Test.
-eval {
-	Image::Random->new(
 		'color' => 'red',
 	);
 };
@@ -61,6 +51,5 @@ clean();
 # Test.
 $obj = Image::Random->new(
 	'color' => Imager::Color->new('#C0C0FF'),
-	'color_random' => 0,
 );
 isa_ok($obj, 'Image::Random');
