@@ -22,6 +22,6 @@ is($ret, 'jpeg', 'Get image type after set.');
 eval {
 	$obj->type('foo');
 };
-is($EVAL_ERROR, "Suffix 'foo' doesn't supported.\n",
-	"Suffix 'foo' doesn't supported.");
+is($EVAL_ERROR, "Image type 'foo' doesn't supported.\n",
+	"Image type 'foo' doesn't supported.");
 clean();
