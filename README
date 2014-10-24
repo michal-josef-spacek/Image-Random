@@ -27,7 +27,7 @@ METHODS
 
                      Image type.
                      List of supported types: bmp, gif, jpeg, png, pnm, raw, sgi, tga, tiff
-                     Default value is undef.
+                     Default value is 'bmp'.
 
             *       "width"
 

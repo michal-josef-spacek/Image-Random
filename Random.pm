@@ -196,7 +196,7 @@ Image::Random - Perl class for creating random image.
 
  Image type.
  List of supported types: bmp, gif, jpeg, png, pnm, raw, sgi, tga, tiff
- Default value is undef.
+ Default value is 'bmp'.
 
 =item * C<width>
 
