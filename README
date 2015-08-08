@@ -9,7 +9,7 @@ SYNOPSIS
      my $type = $obj->type($new_type);
 
 METHODS
-    new(%parameters)
+    "new(%parameters)"
              Constructor.
 
             *       "color"
@@ -90,7 +90,11 @@ DEPENDENCIES
     List::MoreUtils.
 
 SEE ALSO
-    Data::Random, Image::Select.
+    Data::Random
+        TODO
+
+    Image::Select
+        Perl class for creating random image.
 
 REPOSITORY
     <https://github.com/tupinek/Image-Random>.

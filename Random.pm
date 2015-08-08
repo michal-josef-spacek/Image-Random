@@ -175,7 +175,7 @@ Image::Random - Perl class for creating random image.
 
 =over 8
 
-=item B<new(%parameters)>
+=item C<new(%parameters)>
 
  Constructor.
 
@@ -274,8 +274,17 @@ L<List::MoreUtils>.
 
 =head1 SEE ALSO
 
-L<Data::Random>,
-L<Image::Select>.
+=over
+
+=item L<Data::Random>
+
+TODO
+
+=item L<Image::Select>
+
+Perl class for creating random image.
+
+=back
 
 =head1 REPOSITORY
 
