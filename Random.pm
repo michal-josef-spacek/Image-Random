@@ -278,7 +278,7 @@ L<List::MoreUtils>.
 
 =item L<Data::Random>
 
-TODO
+Perl module to generate random data
 
 =item L<Image::Select>
 

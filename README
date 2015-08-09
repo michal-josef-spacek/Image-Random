@@ -91,7 +91,7 @@ DEPENDENCIES
 
 SEE ALSO
     Data::Random
-        TODO
+        Perl module to generate random data
 
     Image::Select
         Perl class for creating random image.
