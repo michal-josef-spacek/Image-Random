@@ -1,5 +1,6 @@
 0.07
  - Add author tests.
+ - Fix Makefile.PL fails with no '.' in @INC.
  - Fix doc.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve tests for create() method.
