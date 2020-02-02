@@ -5,6 +5,7 @@
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve tests for create() method.
  - Update Module::Install to 1.19 version.
+ - Update author github username.
  - Update author name.
  - Update .travis.yml to reality.
 

@@ -283,7 +283,7 @@ Perl class for creating random image.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Image-Random>.
+L<https://github.com/michal-josef-spacek/Image-Random>.
 
 =head1 AUTHOR
 
