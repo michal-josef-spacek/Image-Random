@@ -1,8 +1,6 @@
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use File::Spec::Functions qw(catfile);
 use File::Temp qw(tempdir);
 use Image::Random;

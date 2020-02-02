@@ -59,11 +59,9 @@ ERRORS
              Image type '%s' doesn't supported.
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use File::Temp qw(tempfile);
      use Image::Random;
 

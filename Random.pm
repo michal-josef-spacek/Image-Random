@@ -1,10 +1,8 @@
 package Image::Random;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use File::Basename qw(fileparse);
@@ -12,7 +10,6 @@ use Imager;
 use Imager::Color;
 use List::MoreUtils qw(none);
 
-# Version.
 our $VERSION = 0.07;
 
 # Constructor.
@@ -237,11 +234,9 @@ Image::Random - Perl class for creating random image.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use File::Temp qw(tempfile);
  use Image::Random;
 
