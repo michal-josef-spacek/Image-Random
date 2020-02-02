@@ -6,6 +6,12 @@ use inc::Module::Install;
 # Definition.
 abstract 'Perl class for creating random image.';
 author 'Michal Spacek <skim@cpan.org>';
+author_requires 'English' => 0;
+author_requires 'File::Object' => 0.05;
+author_requires 'Test::More' => 0;
+author_requires 'Test::NoWarnings' => 0;
+author_requires 'Test::Pod' => 0;
+author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
 name 'Image-Random';
 readme_from 'Random.pm';
@@ -26,8 +32,6 @@ test_requires 'Filesys::POSIX' => 0;
 test_requires 'Filesys::POSIX::Mem' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
-test_requires 'Test::Pod' => 0;
-test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
 version '0.07';
 
