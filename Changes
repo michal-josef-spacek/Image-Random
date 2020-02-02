@@ -2,6 +2,7 @@
  - Fix doc.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.19 version.
+ - Update .travis.yml to reality.
 
 0.06 2014-10-24T02:02:01+02:00
  - Add tests.
