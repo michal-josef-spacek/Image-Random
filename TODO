@@ -1,10 +1,12 @@
 TODO
 ====
 2. Pridat 'debug' parametr jako v Image::Select.
-3. Nejaka chyba pri vytvareni temp adresare
 4.
 
 Applied
 =======
 1. Testy.
 OK [20200202] skim
+
+3. Nejaka chyba pri vytvareni temp adresare
+OK [20200228] skim

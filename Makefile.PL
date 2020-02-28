@@ -31,6 +31,7 @@ test_requires 'English' => 0;
 test_requires 'File::Object' => 0.05;
 test_requires 'Filesys::POSIX' => 0;
 test_requires 'Filesys::POSIX::Mem' => 0;
+test_requires 'Imager::File::JPEG' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;
