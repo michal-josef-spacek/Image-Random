@@ -163,6 +163,7 @@ Image::Random - Perl class for creating random image.
 =head1 SYNOPSIS
 
  use Image::Random;
+
  my $obj = Image::Random->new(%parameters);
  my $type = $obj->create($output_path);
  my ($width, $height) = $obj->sizes($new_width, $new_height);
