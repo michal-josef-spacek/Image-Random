@@ -1,5 +1,6 @@
 0.09
  - Improve SYNOPSIS section in doc.
+ - Rewrite doc to use POD =head2 on METHODS.
 
 0.08 2020-02-28T18:09:13+01:00
  - Comment bad test and add TODO about it.

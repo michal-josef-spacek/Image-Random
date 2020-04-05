@@ -171,11 +171,11 @@ Image::Random - Perl class for creating random image.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%parameters)>
+ my $obj = Image::Random->new(%parameters);
 
- Constructor.
+Constructor.
 
 =over 8
 
@@ -203,22 +203,33 @@ Image::Random - Perl class for creating random image.
 
 =back
 
-=item C<create($path)>
+=head2 C<create>
 
- Create image.
- Returns scalar value of supported file type.
+ my $type = $obj->create($output_path);
 
-=item C<sizes([$width, $height])>
+Create image.
 
- Set/Get image sizes.
- Returns actual width and height.
+Returns scalar value of supported file type.
 
-=item C<type([$type])>
+=head2 C<sizes>
 
- Set/Get image type.
- Returns actual type of image.
+ my ($width, $height) = $obj->sizes($new_width, $new_height);
 
-=back
+Set/Get image sizes.
+
+Both parameters are optional, used only for set sizes.
+
+Returns actual width and height.
+
+=head2 C<type>
+
+ my $type = $obj->type($new_type);
+
+Set/Get image type.
+
+Parameter $new_type is optional, used only for setting.
+
+Returns actual type of image.
 
 =head1 ERRORS
 
