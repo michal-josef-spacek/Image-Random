@@ -21,6 +21,11 @@ METHODS
              Default value is undef.
              Undefined value means random color.
 
+    *       "debug"
+
+             Debug mode.
+             Default value is 0.
+
     *       "height"
 
              Height of image.

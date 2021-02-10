@@ -1,6 +1,5 @@
 TODO
 ====
-2. Pridat 'debug' parametr jako v Image::Select.
 4. Opravit test v 04-create.t s Filesys::POSIX
 5.
 
@@ -11,3 +10,6 @@ OK [20200202] skim
 
 3. Nejaka chyba pri vytvareni temp adresare
 OK [20200228] skim
+
+2. Pridat 'debug' parametr jako v Image::Select.
+OK [20210210] skim

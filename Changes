@@ -1,4 +1,5 @@
 0.10
+ - Add 'debug' parameter to print saving path.
  - Fix bugtracker.
  - Update copyright years.
 

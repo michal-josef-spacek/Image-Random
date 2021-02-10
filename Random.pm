@@ -22,6 +22,9 @@ sub new {
 	# Background color.
 	$self->{'color'} = undef;
 
+	# Debug.
+	$self->{'debug'} = 0;
+
 	# Image type.
 	$self->{'type'} = 'bmp';
 
@@ -91,6 +94,9 @@ sub create {
 	}
 
 	# Save.
+	if ($self->{'debug'}) {
+		print "Path: $path\n";
+	}
 	my $ret = $self->{'i'}->write(
 		'file' => $path,
 		'type' => $suffix,
@@ -184,6 +190,11 @@ Constructor.
  Color of image.
  Default value is undef.
  Undefined value means random color.
+
+=item * C<debug>
+
+ Debug mode.
+ Default value is 0.
 
 =item * C<height>
 
